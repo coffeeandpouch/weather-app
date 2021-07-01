@@ -1,15 +1,15 @@
 import "./SearchForm.css";
 
-function SearchForm() {
+export default function SearchForm() {
   return (
-    <form>
-      <label>
-        City:
-        <input type="text" name="city" />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
+    <div>
+      <form id="SearchForm">
+        <label>
+          City:
+          <input type="text" name="city" placeholder="Search for a City" />
+        </label>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
   );
 }
-
-export default SearchForm;
